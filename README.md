@@ -19,8 +19,9 @@
 - [Material Icons font](https://materialdesignicons.com/) (for indicators ofc)
 
 ## Installation
+0. `git clone` the repo in the preferred folder.
 1. `cd` into the corresponding folder (`dwm`, then `slstatus`).
-2. Review the code. Would you trust a stranger on Github, whose repo has zero stars and watchers? Also, if you're on BSD, some parameters in `slstatus.h` are different for BSD and Linux (i'm a Linux user ~~btw~~): edit them accordingly (the long-ass comment with modules' descriptions is made by devs, kudos to them for it).
+2. Review the code. Would you trust a stranger on Github, whose repo has zero stars and watchers? Also, if you're on BSD, some parameters in `slstatus.h` are different for BSD and Linux (i'm a Linux user ~~btw~~): edit them accordingly (the long-ass comment with modules' descriptions is made by devs, kudos to them for it). Also make sure to change the device name in `sl-bkl` to yours (check in the `brightnessctl` output). 
 3. Run in each of the folders (`dwm` and `slstatus`) `sudo make clean install` (or `doas <...>`, if you're a BSD user or a kinky Linuxoid).
 4. Put the `bin` folder in `~` or `~/.local`. Add the resulted folder into your $PATH environment variable in your `~/.bashrc` or `~/.zshrc`:
 ```
