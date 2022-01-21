@@ -37,6 +37,7 @@ export PATH=$PATH:$HOME/bin
 Enjoy ~~while you still can~~
 
 ## Plans
-- change dwm's colour scheme
-- apply the "focusonclick" patch
-- replace brightnessctl with light
+- Change dwm's colour scheme
+- Apply the "focusonclick" patch
+- ~~Replace brightnessctl with light~~
+  - Well, nah. `light`'s output isn't an integer and i'm too lazy to cut off the decimals, so I'll stick to brightnessctl. If it works, it works.
