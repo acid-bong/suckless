@@ -70,9 +70,9 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *roficmd[] = { "rofi", "-show", "drun", "-show-icons", NULL };
 static const char *termcmd[]  = { "alacritty", NULL }; /*different terminal*/
 	/* Volume control */
-	static const char *upvol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
-	static const char *downvol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
-	static const char *mutevol[] = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL };
+	static const char *upvol[] = { "pamixer", "-i", "5", NULL };
+	static const char *downvol[] = { "pamixer", "-d", "5", NULL };
+	static const char *mutevol[] = { "pamixer", "-t", NULL };
 	/* Backlight control */
 	static const char *uplight[] = { "brightnessctl", "s", "+5%", NULL };
 	static const char *downlight[] = { "brightnessctl", "s", "5%-", NULL };
@@ -88,7 +88,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_Left,   setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_Right,  setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_a,      zoom,           {0} },
+	{ MODKEY,                       XK_s,      zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_w,      killclient,     {0} },
 /*	{ MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[0]} },*/
