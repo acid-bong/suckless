@@ -1,0 +1,12 @@
+VOL=$(pamixer --get-volume)
+STATE=$(pamixer --get-mute)
+
+if [ "$STATE" = "true" ] || [ "$VOL" -eq 0 ]; then
+	printf "󰸈"
+elif [ "$VOL" -gt 0 ] && [ "$VOL" -le 30 ]; then
+	printf "󰕿 %s%%" "$VOL"
+elif [ "$VOL" -gt 30 ] && [ "$VOL" -le 59 ]; then
+	printf "󰖀 %s%%" "$VOL"
+else
+	printf "󰕾 %s%%" "$VOL"
+fi
