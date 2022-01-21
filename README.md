@@ -1,7 +1,7 @@
 # Bong-WM - personal dwm+slstatus build
 ## dwm
 ### Patches:
-- [fullgaps](https://dwm.suckless.org/patches/fullgaps/)
+- [fullgaps](https://dwm.suckless.org/patches/fullgaps/), specifically - its toggle version, which has an option to reset changed gaps to the numbers set in `config.h`
 - [systray](https://dwm.suckless.org/patches/systray/)
 
 ### Dependencies (apart from official ones; you wouldn't try a custom build before trying stock, would you?):
