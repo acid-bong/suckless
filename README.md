@@ -3,6 +3,7 @@
 ### Patches:
 - [fullgaps](https://dwm.suckless.org/patches/fullgaps/), specifically - its toggle version, which has an option to reset changed gaps to the numbers set in `config.h`
 - [systray](https://dwm.suckless.org/patches/systray/)
+- [focus on click](https://dwm.suckless.org/patches/focusonclick/)
 
 ### Dependencies (apart from official ones; you wouldn't try a custom build before trying stock, would you?):
 - [pamixer](https://github.com/cdemoulins/pamixer) (for volume bindings; same can be done with pactl, cf [i3-gaps example config](https://github.com/Airblader/i3/blob/gaps-next/etc/config#L37) for those)
@@ -39,6 +40,6 @@ Enjoy ~~while you still can~~
 
 ## Plans
 - Change dwm's colour scheme
-- Apply the "focusonclick" patch
+- ~~Apply the "focusonclick" patch~~
 - ~~Replace brightnessctl with light~~
   - Well, nah. `light`'s output isn't an integer and i'm too lazy to cut off the decimals, so I'll stick to brightnessctl. If it works, it works.
