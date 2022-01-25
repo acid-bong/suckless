@@ -43,3 +43,5 @@ Enjoy ~~while you still can~~
 - ~~Apply the "focusonclick" patch~~
 - ~~Replace brightnessctl with light~~
   - Well, nah. `light`'s output isn't an integer and i'm too lazy to cut off the decimals, so I'll stick to brightnessctl. If it works, it works.
+- Apply the "[tag previews](https://dwm.suckless.org/patches/tag-previews/)" patch (yup, i'm a mouse normie)
+- Try "[taglabels](https://dwm.suckless.org/patches/taglabels/)" patch (maybe i'll finally create new tags/branches for different patches)
