@@ -8,6 +8,8 @@
 ### Dependencies (apart from official ones; you wouldn't try a custom build before trying stock, would you?):
 - [pamixer](https://github.com/cdemoulins/pamixer) (for volume bindings; same can be done with pactl, cf [i3-gaps example config](https://github.com/Airblader/i3/blob/gaps-next/etc/config#L37) for those)
 - [brightnessctl](https://github.com/Hummer12007/brightnessctl) (for brightness bindings)
+- Iosevka (default font; you can change it to your favourite)
+- Material Icons (it actually should be installed in the system for status bar icons (or maybe custom tag names) to work, and also declared in the dwm's config to be displayed properly and consistently).
 
 ## slstatus
 ### Custom bash scripts:
@@ -45,3 +47,4 @@ Enjoy ~~while you still can~~
   - Well, nah. `light`'s output isn't an integer and i'm too lazy to cut off the decimals, so I'll stick to brightnessctl. If it works, it works.
 - Apply the "[tag previews](https://dwm.suckless.org/patches/tag-previews/)" patch (yup, i'm a mouse normie)
 - Try "[taglabels](https://dwm.suckless.org/patches/taglabels/)" patch (maybe i'll finally create new tags/branches for different patches)
+- Finally add more comments into the config. For default options too
