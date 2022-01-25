@@ -8,8 +8,12 @@
 ### Dependencies (apart from official ones; you wouldn't try a custom build before trying stock, would you?):
 - [pamixer](https://github.com/cdemoulins/pamixer) (for volume bindings; same can be done with pactl, cf [i3-gaps example config](https://github.com/Airblader/i3/blob/gaps-next/etc/config#L37) for those)
 - [brightnessctl](https://github.com/Hummer12007/brightnessctl) (for brightness bindings)
-- Iosevka (default font; you can change it to your favourite)
-- Material Icons (it actually should be installed in the system for status bar icons (or maybe custom tag names) to work, and also declared in the dwm's config to be displayed properly and consistently).
+- Iosevka (my default font; you can replace it with your favourite one)
+- Material Icons (it actually should be installed in the system for status bar icons (or maybe custom tag names) to work, and also declared in the dwm's config to be displayed properly and consistently)
+- Alacritty (terminal; you can also replace it)
+- Rofi (app menu/launcher/whatever menu you want it to be; used instead of dmenu\*; also replaceable)
+
+\* Although it's possible to declare a custom command variable for Rofi in `config.h`, commenting/deleting the dmenu variable isn't the way, because it's used somewhere in `dwm.c` (which i'm not gonna edit, i'm no programmer). And, as i'm typing this, i realized that i could just edit the dmenu command instead of creating the separate one for Rofi 🤦
 
 ## slstatus
 ### Custom bash scripts:
@@ -48,3 +52,4 @@ Enjoy ~~while you still can~~
 - Apply the "[tag previews](https://dwm.suckless.org/patches/tag-previews/)" patch (yup, i'm a mouse normie)
 - Try "[taglabels](https://dwm.suckless.org/patches/taglabels/)" patch (maybe i'll finally create new tags/branches for different patches)
 - Finally add more comments into the config. For default options too
+- Make `dmenucmd` ~~great again~~ launch rofi.
