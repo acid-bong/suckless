@@ -32,7 +32,7 @@ keyboard_indicators(const char *fmt)
 	fmtlen = strnlen(fmt, 4);
 	for (i = n = 0; i < fmtlen; i++) {
 		key = tolower(fmt[i]);
-		if (key != 'c' && key != 'n') {
+		if (key != 'a' && key != 'n') {
 			continue;
 		}
 		togglecase = (i + 1 >= fmtlen || fmt[i + 1] != '?');
