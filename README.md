@@ -38,8 +38,32 @@ or
 export PATH=$PATH:$HOME/bin
 ```
 5. Add both slstatus and dwm in your `~/.xinitrc` (or make an xsession, if you'd like to use a DM).
-6. ???
-7. PROFIT!!1!
+6. Make em launchable:
+  
+  a) edit your `~/.xinitrc` or `~/.config/sx/sxrc`:
+```
+slstatus &
+exec dwm
+# or, if you wish to reload dwm without logging out/killing X, replace `exec dwm` with these:
+# while true; do
+# 	dwm >/dev/null 2>&1
+# done
+```
+OR
+
+  b) create an X session at `/usr/share/xsessions/dwm.desktop`:
+```
+[Desktop Entry]
+Encoding=UTF-8
+Name=Dwm
+Comment=Dynamic window manager
+Exec=dwm
+Icon=dwm
+Type=XSession
+```
+  
+7. ???
+8. PROFIT!!1!
 
 Enjoy ~~while you still can~~
 
