@@ -75,4 +75,5 @@ Enjoy ~~while you still can~~
 - Apply the "[tag previews](https://dwm.suckless.org/patches/tag-previews/)" patch (yup, i'm a mouse normie)
 - Try "[taglabels](https://dwm.suckless.org/patches/taglabels/)" patch (maybe i'll finally create new tags/branches for different patches)
 - Finally add more comments into the config. For default options too
-- **DONE** Make `dmenucmd` ~~great again~~ launch rofi. 
+- **DONE** Make `dmenucmd` ~~great again~~ launch rofi.
+- Try [extrabar](https://dwm.suckless.org/patches/extrabar/), [colorbar](https://dwm.suckless.org/patches/colorbar/)
