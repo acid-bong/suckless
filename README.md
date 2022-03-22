@@ -76,4 +76,4 @@ Enjoy ~~while you still can~~
 - Try "[taglabels](https://dwm.suckless.org/patches/taglabels/)" patch (maybe i'll finally create new tags/branches for different patches)
 - Finally add more comments into the config. For default options too
 - **DONE** Make `dmenucmd` ~~great again~~ launch rofi.
-- Try [extrabar](https://dwm.suckless.org/patches/extrabar/), [colorbar](https://dwm.suckless.org/patches/colorbar/)
+- Try [extrabar](https://dwm.suckless.org/patches/extrabar/), [colorbar](https://dwm.suckless.org/patches/colorbar/), https://dwm.suckless.org/patches/selfrestart/, https://dwm.suckless.org/patches/pertag/
