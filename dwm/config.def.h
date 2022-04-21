@@ -81,7 +81,11 @@ static const char *termcmd[]  = { "alacritty", NULL }; /*different terminal*/
 	static const char *scrot_save[] = { "scrotre", "/home/andrei/Изображения/Screenshots/%Y-%m-%d-%H%M%S_$wx$h_scrotre.png", NULL };
 	static const char *scrot_sel[] = { "scrotre", "-sC", NULL };
 	static const char *scrot_sel_save[] = { "scrotre", "-s", "/home/andrei/Изображения/Screenshots/%Y-%m-%d-%H%M%S_$wx$h_scrotre.png", NULL };
-
+	/* MPRIS control */
+	static const char *plause[] = { "playerctl", "play-pause", NULL };
+	static const char *plop[] = { "playerctl", "stop", NULL };
+	static const char *plev[] = { "playerctl", "previous", NULL };
+	static const char *plext[] = { "playerctl", "next", NULL };
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
@@ -112,17 +116,22 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_minus,  setgaps,        {.i = GAP_RESET } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = GAP_TOGGLE} },
 		/* Volume control */
-	{ 0,				XF86XK_AudioRaiseVolume, spawn,          {.v = upvol } },
-	{ 0,				XF86XK_AudioLowerVolume, spawn,          {.v = downvol } },
-	{ 0,				XF86XK_AudioMute, spawn,                 {.v = mutevol } },
+	{ 0,				XF86XK_AudioRaiseVolume,  spawn,          {.v = upvol   } },
+	{ 0,				XF86XK_AudioLowerVolume,  spawn,          {.v = downvol } },
+	{ 0,				XF86XK_AudioMute, 	  spawn,          {.v = mutevol } },
 		/* Backlight control */
-	{ 0,				XF86XK_MonBrightnessUp, spawn,          {.v = uplight } },
+	{ 0,				XF86XK_MonBrightnessUp,   spawn,          {.v = uplight } },
 	{ 0,				XF86XK_MonBrightnessDown, spawn,        {.v = downlight } },
 		/* Scrotre */
-	{ 0,				XK_Print,	spawn,		{.v = scrot } },
-	{ ShiftMask,			XK_Print,	spawn,		{.v = scrot_save } },
-	{ ControlMask,			XK_Print,	spawn,		{.v = scrot_sel } },
+	{ 0,				XK_Print,	spawn,		{.v = scrot          } },
+	{ ShiftMask,			XK_Print,	spawn,		{.v = scrot_save     } },
+	{ ControlMask,			XK_Print,	spawn,		{.v = scrot_sel      } },
 	{ ControlMask|ShiftMask,	XK_Print,	spawn,		{.v = scrot_sel_save } },
+		/* MPRIS control */
+	{ 0,				XF86XK_AudioPlay,	spawn,	{.v = plause } },
+	{ 0,				XF86XK_AudioStop,	spawn,	{.v = plop   } },
+	{ 0,				XF86XK_AudioPrev,	spawn,	{.v = plev   } },
+	{ 0,				XF86XK_AudioNext,	spawn,	{.v = plext  } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
