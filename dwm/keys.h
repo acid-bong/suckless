@@ -46,7 +46,7 @@ static Key keys[] = {
 	
 	{ MODKEY,                       XK_s,      zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY,	                XK_w,      killclient,     {0} },
+	{ MODKEY,	                XK_q,      killclient,     {0} },
 //	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 //	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 //	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
@@ -76,7 +76,7 @@ static Key keys[] = {
 	{ 0,				XF86XK_AudioPrev,	spawn,	{.v = plev   } },
 	{ 0,				XF86XK_AudioNext,	spawn,	{.v = plext  } },
 		/* Custom commands */
-	{ MODKEY,                       XK_r,		spawn,          {.v = ranger } },
+	{ MODKEY,                       XK_f,		spawn,          {.v = ranger } },
 	{ ShiftMask|ControlMask,        XK_Escape,	spawn,          {.v = btop   } },
 //	{ MODKEY,			XK_w,		spawn,		{.v = webcmd } },
 
