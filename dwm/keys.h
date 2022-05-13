@@ -4,7 +4,7 @@ static const char *dmenucmd[] = { "rofi", "-show", "drun", "-show-icons", NULL }
 static const char *termcmd[]  = { "alacritty", NULL };
 	/* custom commands */
 	static const char *ranger[]	= { "alacritty", "-e", "ranger", NULL };
-	static const char *btop[]	= { "alacritty", "-e", "btop", NULL };
+	static const char *btop[]	= { "alacritty", "-t", "btop", "-e", "btop", NULL };
 //	static const char *webcmd[]	= { "firefox", NULL };
 	/* Volume control */
 	static const char *upvol[]	= { "pamixer", "-i", "5", NULL };
